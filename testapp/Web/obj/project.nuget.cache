@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "F2NVw8HVWK/odDvC5t3sDWeiaudVkkysRNgZ7vYSPE4yc5F0AY0wlyBZ0Chsv3e+LHS8IVNK1z8L/pg5SQxsiQ==",
+  "success": true,
+  "projectFilePath": "E:\\UserFiles\\Univer\\3course\\Cloud\\01\\Starter\\web\\Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
