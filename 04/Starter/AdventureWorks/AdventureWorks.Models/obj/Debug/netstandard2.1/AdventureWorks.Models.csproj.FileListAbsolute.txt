@@ -1,0 +1,9 @@
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.deps.json
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\bin\Debug\netstandard2.1\AdventureWorks.Models.pdb
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.csprojAssemblyReference.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.AssemblyInfoInputs.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.AssemblyInfo.cs
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.csproj.CoreCompileInputs.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Models\obj\Debug\netstandard2.1\AdventureWorks.Models.pdb

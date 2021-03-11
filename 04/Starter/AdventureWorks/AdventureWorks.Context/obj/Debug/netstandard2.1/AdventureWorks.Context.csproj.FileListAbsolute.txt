@@ -1,0 +1,14 @@
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\AdventureWorks.Context.deps.json
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\AdventureWorks.Context.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\AdventureWorks.Context.pdb
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\AdventureWorks.Models.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\AdventureWorks.Models.pdb
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.csprojAssemblyReference.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.AssemblyInfoInputs.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.AssemblyInfo.cs
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.csproj.CoreCompileInputs.cache
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.csproj.CopyComplete
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\obj\Debug\netstandard2.1\AdventureWorks.Context.pdb
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\Microsoft.Azure.Cosmos.ServiceInterop.dll
+E:\UserFiles\Univer\3course\Cloud\04\Starter\AdventureWorks\AdventureWorks.Context\bin\Debug\netstandard2.1\Cosmos.CRTCompat.dll

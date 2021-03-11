@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6hD9AHIfQ4PBquAZAzjiHAklq5KGJcDd6tkarSsM+OiPijSoz/YFKJnLaLwbufZM6PkKK31DTtt9y74rmgcZ4g==",
+  "success": true,
+  "projectFilePath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bekbolatti\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

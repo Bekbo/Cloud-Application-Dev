@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Web\\AdventureWorks.Web.csproj": {}
+  },
+  "projects": {
+    "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\AdventureWorks.Context.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\AdventureWorks.Context.csproj",
+        "projectName": "AdventureWorks.Context",
+        "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\AdventureWorks.Context.csproj",
+        "packagesPath": "C:\\Users\\Bekbolatti\\.nuget\\packages\\",
+        "outputPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bekbolatti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj": {
+                "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj",
+        "projectName": "AdventureWorks.Models",
+        "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj",
+        "packagesPath": "C:\\Users\\Bekbolatti\\.nuget\\packages\\",
+        "outputPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bekbolatti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Web\\AdventureWorks.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Web\\AdventureWorks.Web.csproj",
+        "projectName": "AdventureWorks.Web",
+        "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Web\\AdventureWorks.Web.csproj",
+        "packagesPath": "C:\\Users\\Bekbolatti\\.nuget\\packages\\",
+        "outputPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bekbolatti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\AdventureWorks.Context.csproj": {
+                "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Context\\AdventureWorks.Context.csproj"
+              },
+              "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj": {
+                "projectPath": "E:\\UserFiles\\Univer\\3course\\Cloud\\04\\Starter\\AdventureWorks\\AdventureWorks.Models\\AdventureWorks.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Flurl": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

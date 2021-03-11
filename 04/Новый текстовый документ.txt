@@ -1,0 +1,5 @@
+PRIMARY CONNECTION STRING
+AccountEndpoint=https://polycosmosbekbolat.documents.azure.com:443/;AccountKey=bd108YcJ1l65XQMZOVkSgcgJOVh3a2nTqVllBz4N41kcJfnqNHp0TqYcFibzNAXdNylESIQwlzURC6i0p5EBVw==;
+https://polystorbekbolat.blob.core.windows.net/images
+
+Server=tcp:serverbekbolat.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=testuser;Password=TestPa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
