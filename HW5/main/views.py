@@ -89,15 +89,12 @@ def get_item(request, pk, name):
         partition_key=PartitionKey(path="/name"),
         offer_throughput=400
     )
-    print(request)
     if request.method == "DELETE":
-        print('delete')
         try:
             container.delete_item(item=pk, partition_key=name)
         except CosmosResourceNotFoundError:
             return HttpResponse("Resource not Found")
         return redirect('http://127.0.0.1:8000')
-        # return render(request, template_name='index.html', context=context)
     elif request.method == 'POST':
         item = {
             'id': request.POST.get('id'),
@@ -106,8 +103,6 @@ def get_item(request, pk, name):
             'category': request.POST.get('category'),
             'picture': request.POST.get('picture')
         }
-        # picture = request.FILES.get('picture')
-        # item = push_image(picture, request.POST['name'], request.POST['age'], request.POST['category'])
         container.replace_item(item=item['id'], body=item)
         context['item'] = [item]
         return render(request, template_name='index.html', context=context)
