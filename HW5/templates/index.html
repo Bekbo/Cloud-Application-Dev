@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HW 5</title>
+    </head>
+    <style>
+        .items{
+            margin-left: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .picture{
+            width: 60%;
+            height: 60%;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .form input[type="submit"]{
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function removeElement(item) {
+            var name = document.getElementById(item).innerText;
+            alert(item + " " + name)
+            fetch('http://127.0.0.1:8000/pets/' + item+ "/" + name, {
+                method: 'DELETE',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8' // Indicates the content
+                },
+            })
+            .then(res => res.text()) // or res.json()
+            .then(res => alert(res))
+        }
+    </script>
+    <body>
+        <header>
+            <h1>Pets</h1>
+        </header>
+
+        <div class="items">
+            {% for item in items %}
+                <div class="item">
+                    <label>Name:</label>
+                    <h1 id="{{ item.id }}">{{item.name}}</h1>
+                    <p>Ages : {{ item.age }}</p>
+                    <p>Category : {{ item.category }}</p>
+                    <img class="picture" src="{{ item.picture }}">
+                </div>
+            {% endfor %}
+        </div>
+        <div class="item">
+            {% if item %}
+                <div class="item">
+                    <label>Name:</label>
+                    <h1 id="{{ item.id }}">{{item.name}}</h1>
+                    <p>Ages : {{ item.age }}</p>
+                    <p>Category : {{ item.category }}</p>
+                    <img class="picture" src="{{ item.picture }}">
+                    <button onclick=removeElement({{ item.id }}) >Delete</button>
+                </div>
+
+                <div class="form">
+                    <form class="form" action="" method="POST" enctype="multipart/form-data">
+                        <input type="text" name="id" value="{{ item.id }}" hidden="hidden">
+                        <input type="text" name="picture" value="{{ item.picture }}" hidden="hidden">
+                        <label>Name: </label>
+                        <input type="text" name="name" value="{{ item.name }}">
+                        <label>Age: </label>
+                        <input type="number" name="age" value="{{ item.age }}">
+                        <label>Category: </label>
+                        <input type="text" name="category" value="{{ item.category }}">
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+{% csrf_token %}
+        {% if not item %}
+        <div class="form">
+            <form class="form" action="" method="POST" enctype="multipart/form-data">
+                <label>Name: </label>
+                <input type="text" name="name">
+                <label>Age: </label>
+                <input type="number" name="age">
+                <label>Category: </label>
+                <input type="text" name="category">
+                <label>Picture: </label>
+                <input type="file" class="custom-file-input" asp-for="Upload" name="picture">
+                <input type="submit" value="Add a pet">
+            </form>
+        </div>
+        {% endif %}
+
+
+
+    </body>
+</html>
