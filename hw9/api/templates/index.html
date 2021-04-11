@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HomeWork 9</title>
+    </head>
+    <script>
+    </script>
+    <body>
+        <header>
+            <h1>HomeWork 9</h1>
+        </header>
+        <form action="post" method="POST" enctype="multipart/form-data">
+            <input type="text" name="text">
+            <input type="submit">
+        </form>
+        <ul>
+            {% for text in items %}
+                <li>{{ text.text }}</li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>

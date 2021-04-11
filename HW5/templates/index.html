@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>HW 5</title>
+        <title>HomeWork 5 | Pets</title>
     </head>
     <style>
         .items{
@@ -16,12 +16,21 @@
         .item{
             margin-top: 20px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
         }
         .picture{
             width: 60%;
             height: 60%;
+        }
+        .img{
+            width: 50%;
+            height: 100%;
+        }
+        .details{
+            width: 50%;
+            height: 100%;
+
         }
         .form{
             display: flex;
@@ -34,65 +43,61 @@
         }
     </style>
     <script>
-        function removeElement(item) {
-            var name = document.getElementById(item).innerText;
-            alert(item + " " + name)
-            fetch('http://127.0.0.1:8000/pets/' + item+ "/" + name, {
+        function removeElement(id) {
+            var name = document.getElementById(id).value;
+            fetch('https://backendbekbolatpets.azurewebsites.net/pets/' + id+ "/" + name, {
                 method: 'DELETE',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8' // Indicates the content
                 },
-            })
+             })
             .then(res => res.text()) // or res.json()
-            .then(res => alert(res))
         }
         function goto(item) {
+            console.log(item)
             var name = document.getElementById(item).innerText;
-            alert(item + " " + name)
-            window.location.href = 'http://127.0.0.1:8000/pets/' + item+ "/" + name;
+            console.log(name)
+            window.location.href = 'https://backendbekbolatpets.azurewebsites.net/pets/' + item+ "/" + name;
         }
     </script>
     <body>
         <header>
-            <h1>Pets</h1>
+            <h1>HomeWork 5 | Pets</h1>
         </header>
 
         <div class="items">
             {% for item in items %}
                 <div class="item">
-                    <label>Name:</label>
-                    <h1 id={{item.id}}>{{item.name}}</h1>
-                    <p>Ages : {{ item.age }}</p>
-                    <p>Category : {{ item.category }}</p>
-                    <img class="picture" src="{{ item.picture }}">
-                    <button onclick=goto({{item.id}}+"")>View {{ item.id }}</button>
+                    <div class="img"><img class="picture" src="{{ item.picture }}"></div>
+                    <div class="details">
+                        <label>Name:</label>
+                        <h1 id={{item.id}}>{{item.name}}</h1>
+                        <p>Ages : {{ item.age }}</p>
+                        <p>Category : {{ item.category }}</p>
+                        <button onclick=goto({{item.id}})>View {{ item.name }}</button>
+                    </div>
                 </div>
             {% endfor %}
         </div>
         <div class="item">
             {% if item %}
-                <div class="item">
-                    <label>Name:</label>
-                    <h1 id="{{ item.id }}">{{item.name}}</h1>
-                    <p>Ages : {{ item.age }}</p>
-                    <p>Category : {{ item.category }}</p>
-                    <img class="picture" src="{{ item.picture }}">
-                    <button onclick=removeElement({{ item.id }}) >Delete</button>
-                </div>
-
-                <div class="form">
-                    <form class="form" action="" method="POST" enctype="multipart/form-data">
-                        <input type="text" name="id" value="{{ item.id }}" hidden="hidden">
-                        <input type="text" name="picture" value="{{ item.picture }}" hidden="hidden">
-                        <label>Name: </label>
-                        <input type="text" name="name" value="{{ item.name }}">
-                        <label>Age: </label>
-                        <input type="number" name="age" value="{{ item.age }}">
-                        <label>Category: </label>
-                        <input type="text" name="category" value="{{ item.category }}">
-                        <input type="submit" value="Save">
-                    </form>
-                </div>
+                    <div class="img">
+                        <img class="picture" src="{{ item.picture }}">
+                    </div>
+                    <div class="details">
+                        <form class="form" action="" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="id" value="{{ item.id }}" hidden="hidden">
+                            <input type="text" name="picture" value="{{ item.picture }}" hidden="hidden">
+                            <label>Name: </label>
+                            <input id="{{ item.id }}" type="text" name="name" value="{{ item.name }}">
+                            <label>Age: </label>
+                            <input type="number" name="age" value="{{ item.age }}">
+                            <label>Category: </label>
+                            <input type="text" name="category" value="{{ item.category }}">
+                            <input type="submit" value="Save">
+                        </form>
+                    <button onclick="removeElement({{ item.id }})">Delete</button>
+                    </div>
             {% endif %}
         </div>
 {% csrf_token %}
@@ -104,15 +109,12 @@
                 <label>Age: </label>
                 <input type="number" name="age">
                 <label>Category: </label>
-                <input type="text" name="category">
+                <input type="text" name="Category">
                 <label>Picture: </label>
                 <input type="file" class="custom-file-input" asp-for="Upload" name="picture">
                 <input type="submit" value="Add a pet">
             </form>
         </div>
         {% endif %}
-
-
-
     </body>
 </html>
